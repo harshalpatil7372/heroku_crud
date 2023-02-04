@@ -1,0 +1,8 @@
+<!-- update.html -->
+
+<h1>Update Your Model</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" value="{{ object.name }}" required>
+    <input type="submit" value="Update">
+</form>
